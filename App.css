@@ -1,0 +1,81 @@
+.GameMenu {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #2d2b3f;
+  color: #e0e0e0;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+}
+
+h2 {
+  color: #d4af37;
+}
+
+.options-container,
+.selected-container,
+.possessed-container,
+.augment-container,
+.acquired-augments-container {
+  margin: 20px 0;
+}
+
+button {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 10px 15px; /* Adjusted padding for smaller buttons */
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #836fff;
+}
+
+button.disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+button.selected {
+  background-color: #483d8b;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #7289da; /* Changed color for Illuvials on the board */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.augment-options {
+  display: flex;
+  justify-content: center;
+}
+
+.augment-options button {
+  width: calc(100% / 3 - 10px); /* Adjusted width for smaller buttons and spacing */
+}
+
+.acquired-augments {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.acquired-augment-box {
+  background-color: #009688; /* Changed color for acquired augments */
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+}
